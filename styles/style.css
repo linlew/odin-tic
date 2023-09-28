@@ -1,0 +1,27 @@
+.body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.gameboard {
+    background-color: grey;
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.square {
+    background-color: black;
+    margin: 20px;
+}
