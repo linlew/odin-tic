@@ -8,20 +8,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 50px;
 }
 
+.title {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
 .gameboard {
-    background-color: grey;
-    height: 600px;
-    width: 600px;
+    background-color: black;
+    height: 445px;
+    width: 445px;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 135px);
+    grid-template-rows: repeat(3, 135px);
+    gap: 20px;
 }
 
 .square {
-    background-color: black;
-    margin: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    font-size: 85px;
+    font-weight: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    margin: 10px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-input {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button {
+    margin: 10px;
+    height: 45px;
+    width: 150px;
+    font-size: 25px;
 }

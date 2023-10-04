@@ -9,16 +9,31 @@
   <body>
     <div class="container">
       <div class="gameboard">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="square-1 square"></div>
+        <div class="square-2 square"></div>
+        <div class="square-3 square"></div>
+        <div class="square-4 square"></div>
+        <div class="square-5 square"></div>
+        <div class="square-6 square"></div>
+        <div class="square-7 square"></div>
+        <div class="square-8 square"></div>
+        <div class="square-9 square"></div>
       </div>
+      <div class="title">What are your names?</div>
+      <form class="start-form">
+        <div class="player">
+          <label for="player-1">Player 1:</label>
+          <input class="player-input" type="text" id="player-1" />
+        </div>
+        <div class="player">
+          <label for="player-2">Player 2:</label>
+          <input class="player-input" type="text" id="player-2" />
+        </div>
+        <div class="buttons">
+          <button id="start-game" type="button">Start</button>
+          <button id="clear" type="reset">Clear</button>
+        </div>
+      </form>
     </div>
     <script src="index.js"></script>
   </body>
