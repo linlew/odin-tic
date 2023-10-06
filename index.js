@@ -17,17 +17,18 @@ const frm = document.querySelector(".start-form");
 const resetBtnDiv = document.createElement('div');
 resetBtnDiv.classList.add('reset-div')
 
+
+const resetBtn = document.createElement('button');
+resetBtn.classList.add('reset-btn');
+resetBtn.setAttribute('type', 'button');
+resetBtn.textContent = "Quit";
+resetBtnDiv.appendChild(resetBtn);
+
 const againBtn = document.createElement('button');
 againBtn.classList.add('again-btn');
 againBtn.setAttribute('type', 'button');
 againBtn.textContent = "Play Again";
 resetBtnDiv.appendChild(againBtn);
-
-const resetBtn = document.createElement('button');
-resetBtn.classList.add('reset-btn');
-resetBtn.setAttribute('type', 'button');
-resetBtn.textContent = "Reset";
-resetBtnDiv.appendChild(resetBtn);
 
 
 againBtn.addEventListener('click', () => {
